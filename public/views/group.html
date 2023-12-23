@@ -1,0 +1,143 @@
+<div class="group card hoverable mx-auto col-md-10 border-bottom" id="group-info">
+    <div class="card-body">
+        <div class="">
+            <div class="details">
+                <h1 class="group-name border-bottom "></h1>
+                <div class="mt-1">
+                    <i class="fas fa-users"></i>
+
+                    <span class="followers"></span>
+                    <span>Подписчиков</span>
+                    <div>
+                        <p class="d-inline"> Тип сообщества: </p>
+                        <span class="community-type"></span>
+                    </div>
+                    <h2>Администраторы</h2>
+                    <div class="admins">
+                        <div class="author card hoverable my-1 d-none" id="author-card-template">
+                            <a href="/gg" class="author-link"><span class="link"></span></a>
+                            <div class="row px-2 py-2">
+                                <div class="col-md-2 justify-content-sm-center d-flex">
+                                    <div class="wrapper w-100">
+                                        <img src="/public/images/man.jpg"
+                                             class="img-fluid rounded-circle author-avatar">
+                                    </div>
+
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="details">
+                                                <h5 class="fullname"></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <h3>Описание</h3>
+                <p class="description"></p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="post card hoverable my-1 d-none" id="card-template">
+    <div class="card-body">
+        <div class="">
+            <div class="details">
+                <div>
+                    <p class="author"></p>
+                    <p class="attribute"> - </p>
+                    <p class="create-time"></p>
+                    <p class="community"></p>
+                </div>
+                <a href="/gg" class="post-link link-for-authorized nav-link" data-link type="text/html"><h2
+                        class="post-title border-bottom "></h2></a>
+                <div class="mt-1">
+                    <div class="col-md-12 mx-auto text-center mb-1">
+                        <img src="" class="img-fluid post-photo">
+                    </div>
+                    <p class="description"></p>
+                    <p class="tags text-secondary"></p>
+                    <p class="attribute">Время чтения:</p>
+                    <p class="time-reading"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <div class="d-flex">
+            <div>
+                <i class="fas fa-comment" style="display: inline"></i>
+                <p style="display: inline" class="cnt-comments"> 0</p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div>
+                <i class="far fa-heart" style="display: inline"></i>
+                <p class="cnt-like" style="display: inline"> 0</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container card my-5">
+
+    <div class="card-header">Фильтры</div>
+    <div class="card-body">
+        <form id="filter-form" >
+            <div class="row">
+                <div class="col mb-3">
+                    <div class="row ">
+                        <label for="tag-col" class="form-label">Выберите Тэг</label>
+                        <select
+                                multiple
+                                class="col"
+                                name="tag-col"
+                                id="tag-col"
+                                placeholder="Ничего не выбрано"
+                        >
+
+                        </select>
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="row">
+                        <label for="sorting-select" class="form-label ">Сортировка</label>
+                        <select class="show-tick border form-control" data-width="100%" id="sorting-select">
+                            <option value="CreateDesc" selected>По возрастанию времени добавления</option>
+                            <option value="CreateAsc">По убыванию времени добавления</option>
+                            <option value="LikeAsc">По возрастанию лайков</option>
+                            <option value="LikeDesc">По убыванию лайков</option>
+                        </select>
+                    </div>
+                </div>
+                <button id="filter-submit" type="submit" class="gray btn btn-primary py-3">Применить</button>
+
+            </div>
+
+        </form>
+    </div>
+</div>
+
+<div class="container" id="posts"></div>
+
+<nav class="my-5">
+    <ul class="pagination justify-content-start align-items-center">
+        <!--
+        <li class="page-item direction-item">
+            <a class="page-link" href="" tabindex="-1" aria-disabled="true"><i class="fa-solid fa-angle-left"></i></a>
+        </li>
+        <li class="page-item num-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item num-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item num-item"><a class="page-link" href="#">12</a></li>
+        <li class="page-item direction-item">
+            <a class="page-link" href=""><i class="fa-solid fa-angle-right"></i></a>
+        </li>
+        -->
+    </ul>
+</nav>

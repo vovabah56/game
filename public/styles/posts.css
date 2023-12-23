@@ -1,0 +1,113 @@
+.card.post .card-body .author,.create-time, .time-reading, .community,
+.attribute,
+.fullname{
+    display: inline;
+}
+
+.comments{
+    padding-bottom: 0;
+}
+#navbar {
+    transition: ease 0.7s;
+}
+.font-size-1-15{
+    font-size: 1.15rem!important
+}
+
+.font-size-0-5{
+    font-size: 0.75rem!important
+}
+
+.container{
+    --bs-gutter-x: 0;
+}
+
+.select2-container{
+    display: block!important;
+}
+
+.limit-info{
+    min-width: 120px; /* Минимальная ширина */
+    max-width: 120px; /* Максимальная ширина */
+}
+.author-avatar{
+    border-radius: 100px!important;  /* Радиус скругления */
+    border: 3px solid black;
+}
+
+#navbar .navbar-brand {
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: var(--red);
+}
+
+#navbar .nav-item .nav-link {
+    cursor: pointer;
+    color: #8E8C90;
+    transition: ease 0.3s;
+}
+.limit-info{
+    min-width: 20px; /* Минимальная ширина */
+    max-width: 20px; /* Максимальная ширина */
+}
+
+.wrapper {
+    position: relative;
+}
+
+.overlay-image {
+    position: absolute;
+    top: 0;
+    right: -0;
+    min-width: 50px; /* Минимальная ширина */
+    max-width: 50px; /* Максимальная ширина */
+    transform: rotate(45deg);
+}
+
+#navbar .nav-item .nav-link:hover {
+    color: var(--dark-gray);
+}
+
+#navbar{
+    display: flex;
+}
+
+#navbar.authorized .link-for-authorized,
+body.authorized .authorized,
+#navbar.unauthorized .link-for-unauthorized {
+    display: block;
+}
+
+#navbar.authorized .link-for-unauthorized,
+body.unauthorized .authorized,
+#navbar.unauthorized .link-for-authorized {
+    display: none;
+}
+
+:root {
+    --white: #ffff;
+    --light-dirty-white: #E1E1E1;
+    --dirty-white: #BEBEBE;
+    --dark-dirty-white: #898A93;
+    --red: #D71F26;
+    --dark-red: #892C2F;
+    --gray: #3B3C47;
+    --light-gray:#5d5e68;
+    --dark-gray: #22242F;
+    --deep-gray: #373743;
+    --sand-gray: #65656F;
+    --light-green: #558B51;
+    --dark-green: #2E3E37;
+    --coral: #B93338;
+    --light-coral: #bb4e52;
+    --yellow: #FFC700;
+    --yellow-gray: #38352D;
+    --dull-yellow: #AE8D16;
+    --light-yellow: #b19c52;
+    --gold: #886F1D;
+    --metalic: #514444;
+    --metalic-gray: #343a40;
+    --dark-purple: #1d1f2efb;
+    --blue: #42AAFF;
+    --regular-font-size: 16px;
+}

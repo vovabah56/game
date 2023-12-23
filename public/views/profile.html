@@ -1,0 +1,41 @@
+<div class="container my-5 py-5 px-5">
+    <div class="row">
+        <div class="col-lg-4 profile">
+            <div class="profile-photo justify-content-sm-center d-flex">
+                <img class="img-fluid" id="user-avatar" src="/public/images/user-icon.png">
+            </div>
+        </div>
+        <div class="col">
+            <form id="profile-form">
+                <div class="mb-3">
+
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" name="email" id="email" readonly>
+                </div>
+                <div class="mb-3">
+
+                    <label for="fullName" class="form-label">ФИО</label>
+                    <input type="fullName" class="form-control" name="fullName" id="fullName" readonly>
+                </div>
+
+                <div class="mb-3">
+                    <label for="phoneNumber" class="form-label">Номер телефона</label>
+                    <input type="text" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="+7 (___) ___-__-__">
+                </div>
+                <div class="mb-3">
+                    <label for="birthDate" class="form-label">Дата рождения</label>
+                    <input type="date" class="form-control" name="birthDate" id="birthDate" readonly>
+                </div>
+                <div class="mb-4">
+                    <label for="gender" class="form-label">Пол</label>
+                    <select id="gender" class="form-select" disabled>
+                        <option value="Female">Женский</option>
+                        <option value="Male">Мужской</option>
+                    </select>
+                </div>
+                <button id="editBtn" type="button" class="   btn-primary btn py-3">Редактировать</button>
+                <button id="saveBtn" type="submit" class="btn-primary btn py-3 text-white d-none">Сохранить</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+<div class="container card my-5">
+
+    <div class="card-header">Написать новый пост</div>
+    <div class="card-body">
+        <form id="filter-form">
+            <div class="row mb-3">
+                <div class="col mb-3">
+                    <div class="col">
+                        <label for="title" class="form-label">Название</label>
+                        <input type="text" class="form-control" name="title" id="title">
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="col">
+                        <label for="readingTime" class="form-label">Время чтения</label>
+                        <input type="text" class="form-control" name="readingTime" id="readingTime">
+                    </div>
+                </div>
+
+            </div>
+            <div class="row mb-3">
+                <div class="col mb-3">
+                    <div class="col">
+                        <label for="group" class="form-label">Группа</label>
+                        <input type="text" class="form-control1" name="group" id="group">
+                    </div>
+                </div>
+                <div class="col mb-3">
+                    <div class="row ">
+                        <label for="tags" class="form-label">Выберите Тэг</label>
+                        <select
+                                multiple
+                                class="col form-control"
+                                name="tags"
+                                id="tags"
+                                placeholder="Ничего не выбрано"
+                        >
+
+                        </select>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class=" mb-2">
+                <label for="image" class="form-label">Ссылка на картинку</label>
+                <input type="text" class="form-control" name="image" id="image">
+            </div>
+            <div class="form-group mb-2">
+                <label for="description">Текст</label>
+                <textarea class="form-control" id="description" rows="5" placeholder=""></textarea>
+            </div>
+            <h3>Адрес</h3>
+
+            <div class="border rounded p-3 form-group" id="address">
+
+
+                <div class="dropdown mt-3" id="divInputSubject0">
+                    <label for="level-0">Субъект РФ</label>
+                    <select class="select2 form-control" id="level-0">
+                        <option value="0"></option>
+                        <option value="1281271" data-value="{&quot;objectId&quot;:1281386,&quot;objectGuid&quot;:&quot;889b1f3a-98aa-40fc-9d3d-0f41192758ab&quot;}">обл Томская</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="float-end">
+                <button type="submit" class="btn btn-primary float-right">Отправить</button>
+
+            </div>
+        </form>
+    </div>
+
+</div>
+<script src="/public/scripts/create-post.js" type="module"></script>
+

@@ -1,0 +1,199 @@
+<div class="post card hoverable mx-auto col-md-10 border-bottom" id="post-info">
+    <div class="card-body">
+        <div class="">
+            <div class="details">
+                <div>
+                    <p class="author"></p>
+                    <p class="attribute"> - </p>
+                    <p class="create-time"></p>
+                    <p class="community"></p>
+                </div>
+                <a href="/gg" class="post-link link-for-authorized nav-link" data-link type="text/html"><h2
+                        class="post-title border-bottom "></h2></a>
+                <div class="mt-1">
+                    <div class="col-md-12 mx-auto text-center mb-1">
+                        <img src="" class="img-fluid post-photo">
+                    </div>
+                    <p class="description"></p>
+                    <p class="tags text-secondary"></p>
+                    <p class="attribute">Время чтения:</p>
+                    <p class="time-reading"></p>
+                    <div class="d-flex d-none loc-div">
+                        <div>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p style="display: inline" class="location"></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <div class="card-footer d-flex justify-content-between">
+        <div class="d-flex">
+            <div>
+                <i class="fas fa-comment" style="display: inline"></i>
+                <p style="display: inline" class="cnt-comments"> 0</p>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div>
+                <i class="far fa-heart" style="display: inline"></i>
+                <p class="cnt-like" style="display: inline"> 0</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class=" mx-auto my-1 d-none col-md-10" id="create-comment">
+    <div class="card">
+        <div class="card-body">
+            <form>
+                <div class="form-group mb-2">
+                    <label for="content">Ваш комментарий:</label>
+                    <textarea class="form-control" id="content" rows="3" placeholder="Введите комментарий"></textarea>
+                </div>
+                <div class="float-end">
+                    <button type="submit" class="btn btn-primary float-right">Отправить</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+
+<div class="card mx-auto mt-4 col-12 col-md-10" id="commentCarts">
+    <div class="card-body">
+        <h3 class="card-title" id="comment-title">Комментарии</h3>
+        <ul id="commentList" class="list-unstyled">
+            <li class="d-none template-comment">
+                <div class="mt-2">
+                    <div class="comment-header d-flex gap-1">
+                        <span class="author-comment">Имя пользователя</span>
+                        <div class="d-none myComment">
+                            <button type="submit" class="btn p-0 edit-comment "><i class="fas fa-pen-fancy"></i>
+                            </button>
+                            <button type="submit" class="btn p-0 remove-comment "><i class="fas fa-trash"></i></button>
+                        </div>
+                    </div>
+                    <div class="content-comment font-size-1-15">Текст комментария</div>
+                    <div class="comment-date">
+                        <span class="create-time-comment"></span>
+                        <span class="is-edit font-size-0-5 d-none text-secondary " data-date="12.12.2023">(изменено)</span>
+                        <button class="btn btn-link p-0 replyBtn answer-comment d-none">Ответить</button>
+                    </div>
+                    <!— Форма для ответа на комментарий —>
+                    <form class="commentReplyForm d-none">
+                        <div class="mb-1 d-flex gap-1  btnReply btnChange">
+                            <label><textarea class="form-control answer-row" placeholder="Введите комментарий"
+                                             rows="1"></textarea></label>
+                            <button type="submit" class="btn btn-primary  btnReply">Ответить</button>
+                        </div>
+                    </form>
+                    <!------------------------------------->
+                    <!— Форма для редактирования на комментарий —>
+                    <form class="commentEditForm d-none">
+                        <div class="mb-1 d-flex gap-1 btnChange">
+                            <label><textarea class="form-control edit-row" rows="1"></textarea></label>
+                            <button type="submit" class="btn btn-warning btnEdit">Редактировать</button>
+                        </div>
+                    </form>
+                    <!------------------------------------->
+                    <div class="open-sub-comment d-none">
+                        <button class="btn btn-link p-0 mb-1  openBtn">Раскрыть ответы</button>
+                        <button class="btn btn-link p-0 mb-1 d-none  closeBtn">Скрыть ответы</button>
+                    </div>
+                    <ul class="list-unstyled nested-comment media ms-4 sub-comments d-none">
+                        <li class="subComment">
+                            <div class="ms-2 mt-2 nested-comment border-bottom">
+                                <div class="comment-header d-flex gap-1">
+                                    <span class="author-comment">Имя пользователя</span>
+                                    <div class="d-none myComment">
+                                        <button type="submit" class="btn p-0 edit-comment"><i
+                                                class="fas fa-pen-fancy"></i></button>
+                                        <button type="submit" class="btn p-0 remove-comment"><i
+                                                class="fas fa-trash"></i></button>
+                                    </div>
+                                </div>
+                                <div class="content-comment font-size-1-15">Текст комментария</div>
+
+                                <span class="create-time-comment">19.20.2022 17:50 </span>
+                                <span class="is-edit font-size-0-5 d-none text-secondary " data-date="12.12.2023">(изменено)</span>
+                                <button class="btn btn-link p-0 answer-comment-nested text-decoration-none d-none mb-1">
+                                    Ответить
+                                </button>
+
+                                <!— Форма для ответа на комментарий —>
+                                <form class="commentReplyForm-nested d-none">
+                                    <div class="mb-1 d-flex gap-1  btnReply btnChange">
+                                        <label><textarea class="form-control answer-row" rows="1"></textarea></label>
+                                        <button type="submit" class="btn btn-primary  btnReply">Ответить</button>
+                                    </div>
+                                </form>
+                                <!------------------------------------->
+                                <!— Форма для редактирования на комментарий —>
+                                <form class="commentEditForm-nested d-none">
+                                    <div class="mb-1 d-flex gap-1 btnChange">
+                                        <label><textarea class="form-control edit-row" rows="1"></textarea></label>
+                                        <button type="submit" class="btn btn-primary btnEdit">Редактировать</button>
+                                    </div>
+                                </form>
+                                <!------------------------------------->
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<style>
+    /* Дополнительные стили могут быть добавлены по мере необходимости */
+
+    .media {
+        position: relative;
+    }
+
+
+    .nested-comment {
+        margin-left: 20px; /* Отступ для вложенных комментариев */
+    }
+
+    .nested-comment::before {
+        left: -6px; /* Коррекция отступа для вложенных комментариев */
+    }
+
+    .nested-comment::before {
+        content: "";
+        position: absolute;
+        top: -5px;
+        left: -8px; /* Отступ слева от вложенного комментария */
+        width: 2px; /* Ширина линии */
+        height: 115%;
+        background-color: #42AAFF; /* Цвет линии */
+    }
+
+    .is-edit {
+        position: relative;
+        cursor: pointer;
+    }
+
+    .is-edit::after {
+        content: attr(data-date);
+        position: absolute;
+        top: -15px;
+        left: 100%;
+        margin-left: 5px;
+        display: none;
+        background-color: rgb(128, 128, 128);
+        color: black; /* Цвет даты, можно изменить */
+    }
+
+    .is-edit:hover::after {
+        display: inline-block;
+    }
+</style>

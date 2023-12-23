@@ -1,0 +1,132 @@
+<div class="container  border-bottom">
+    <div class="post card hoverable my-1 d-none mx-auto" id="card-template">
+        <div class="card-body">
+            <div class="">
+                <div class="details">
+                    <div>
+                        <p class="author"></p>
+                        <p class="attribute"> - </p>
+                        <p class="create-time"></p>
+                        <p class="community"></p>
+                    </div>
+                    <a href="/gg" class="post-link link-for-authorized nav-link" data-link type="text/html"><h2
+                            class="post-title border-bottom "></h2></a>
+                    <div class="mt-1">
+                        <div class="col-md-12 mx-auto text-center mb-1">
+                            <img src="" class="img-fluid post-photo">
+                        </div>
+                        <p class="description"></p>
+                        <button class="btn btn-link p-0 mb-1  readMoreBtn">Читать полностью</button>
+                        <p class="tags text-secondary"></p>
+                        <p class="attribute">Время чтения:</p>
+                        <p class="time-reading"></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="card-footer d-flex justify-content-between">
+            <div class="d-flex">
+                <div>
+                    <i class="fas fa-comment post-link link-for-authorized nav-link" href="/gg" style="display: inline"></i>
+                    <p style="display: inline" class="cnt-comments"> 0</p>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div>
+                    <i class="far fa-heart" style="display: inline"></i>
+                    <p class="cnt-like" style="display: inline"> 0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="float-end my-2 authorized">
+        <a href="/post/create" class=" btn btn-primary  ms-2 " data-link>Написать пост</a>
+    </div>
+    <div class="container card my-5">
+
+        <div class="card-header">Фильтры</div>
+        <div class="card-body">
+            <form id="filter-form">
+                <div class="row mb-3">
+                    <div class="col mb-3">
+                        <div class="col">
+                            <label for="author" class="form-label">Выбор автора</label>
+                            <input type="text" class="form-control" name="author" id="author">
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="row ">
+                            <label for="tag-col" class="form-label">Выберите Тэг</label>
+                            <select
+                                    multiple
+                                    class="col"
+                                    name="tag-col"
+                                    id="tag-col"
+                                    placeholder="Ничего не выбрано"
+                            >
+
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-3">
+
+                    <div class="col mb-3">
+                        <div class="row">
+                            <label for="sorting-select" class="form-label ">Сортировка</label>
+                            <select class="show-tick border form-control" data-width="100%" id="sorting-select">
+                                <option value="CreateDesc" selected>По возрастанию времени добавления</option>
+                                <option value="CreateAsc">По убыванию времени добавления</option>
+                                <option value="LikeAsc">По возрастанию лайков</option>
+                                <option value="LikeDesc">По убыванию лайков</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="col">
+                            <label for="min-read-time" class="form-label">Время чтения от</label>
+                            <input type="number" class="form-control" name="minreadtime" id="min-read-time">
+                        </div>
+                    </div>
+                    <div class="col mb-3">
+                        <div class="col">
+                            <label for="max-read-time" class="form-label">Время чтения до</label>
+                            <input type="number" class="form-control" name="max-read-time" id="max-read-time">
+                        </div>
+                    </div>
+                    <div class="col mb-3 authorized">
+                        <div class="col">
+                            <div class="form-check form-switch ">
+                                <input class="form-check-input" type="checkbox" role="switch" id="onlyMyCommunities">
+                                <label class="form-check-label" for="onlyMyCommunities">Показать только мои
+                                    комьюнити</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button id="filter-submit" type="submit" class="gray btn btn-primary py-3">Применить</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div id="posts"></div>
+
+    <nav class="my-5">
+        <ul class="pagination justify-content-start align-items-center">
+            <!--
+            <li class="page-item direction-item">
+                <a class="page-link" href="" tabindex="-1" aria-disabled="true"><i class="fa-solid fa-angle-left"></i></a>
+            </li>
+            <li class="page-item num-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item num-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item num-item"><a class="page-link" href="#">12</a></li>
+            <li class="page-item direction-item">
+                <a class="page-link" href=""><i class="fa-solid fa-angle-right"></i></a>
+            </li>
+            -->
+        </ul>
+    </nav>
+</div>
